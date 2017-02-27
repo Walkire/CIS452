@@ -1,0 +1,90 @@
+Script started on Thu 09 Feb 2017 11:15:54 AM EST
+[?1034h[eos20:~/CIS452/Labs/Lab5]$ ./a.out
+value a: 140663676481536	 value b: 140663676485632
+ID of shared memory: 463634455
+^C
+[eos20:~/CIS452/Labs/Lab5]$ ipcr[K[Kcs
+
+------ Message Queues --------
+key        msqid      owner      perms      used-bytes   messages    
+
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status      
+0x00000000 443973632  allvinn    600        393216     2          dest         
+0x00000000 444071937  allvinn    600        524288     2          dest         
+0x00000000 444170242  allvinn    600        393216     2          dest         
+0x00000000 444268547  allvinn    600        393216     2          dest         
+0x00000000 444366852  allvinn    600        393216     2          dest         
+0x00000000 445186053  allvinn    600        393216     2          dest         
+0x00000000 444563462  allvinn    600        393216     2          dest         
+0x00000000 444792839  allvinn    600        524288     2          dest         
+0x00000000 444891144  allvinn    600        524288     2          dest         
+0x00000000 444923913  allvinn    600        4194304    2          dest         
+0x00000000 445054986  allvinn    600        524288     2          dest         
+0x00000000 445579275  allvinn    600        524288     2          dest         
+0x00000000 463372300  allvinn    600        524288     2          dest         
+0x00000000 447119373  allvinn    600        393216     2          dest         
+0x000003c5 123928590  herreraj   666        16384      0                       
+0x00000000 449937423  allvinn    600        524288     2          dest         
+0x00000000 446988304  allvinn    600        524288     2          dest         
+0x00263920 443056145  willekel   606        4096       0                       
+0x00000000 458129426  allvinn    600        4096       0                       
+0x00000000 458424339  allvinn    600        4096       0                       
+0x00000000 458457108  allvinn    600        4096       0                       
+0x00000000 458817557  allvinn    600        4096       0                       
+0x00000000 462159894  allvinn    600        4096       0                       
+0x00000000 463634455  allvinn    600        4096       0                       
+0x0000133c 397148185  sciarian   666        16384      0                       
+0x00006122 400293915  sciarian   666        16384      0                       
+0x000036f2 91291686   staffors   666        16384      0                       
+
+------ Semaphore Arrays --------
+key        semid      owner      perms      nsems     
+
+[eos20:~/CIS452/Labs/Lab5]$ ipcrm -m 46363434[K[K455
+[eos20:~/CIS452/Labs/Lab5]$ ipcs
+
+------ Message Queues --------
+key        msqid      owner      perms      used-bytes   messages    
+
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status      
+0x00000000 443973632  allvinn    600        393216     2          dest         
+0x00000000 444071937  allvinn    600        524288     2          dest         
+0x00000000 444170242  allvinn    600        393216     2          dest         
+0x00000000 444268547  allvinn    600        393216     2          dest         
+0x00000000 444366852  allvinn    600        393216     2          dest         
+0x00000000 445186053  allvinn    600        393216     2          dest         
+0x00000000 444563462  allvinn    600        393216     2          dest         
+0x00000000 444792839  allvinn    600        524288     2          dest         
+0x00000000 444891144  allvinn    600        524288     2          dest         
+0x00000000 444923913  allvinn    600        4194304    2          dest         
+0x00000000 445054986  allvinn    600        524288     2          dest         
+0x00000000 445579275  allvinn    600        524288     2          dest         
+0x00000000 463372300  allvinn    600        524288     2          dest         
+0x00000000 447119373  allvinn    600        393216     2          dest         
+0x000003c5 123928590  herreraj   666        16384      0                       
+0x00000000 449937423  allvinn    600        524288     2          dest         
+0x00000000 446988304  allvinn    600        524288     2          dest         
+0x00263920 443056145  willekel   606        4096       0                       
+0x00000000 458129426  allvinn    600        4096       0                       
+0x00000000 458424339  allvinn    600        4096       0                       
+0x00000000 458457108  allvinn    600        4096       0                       
+0x00000000 458817557  allvinn    600        4096       0                       
+0x00000000 462159894  allvinn    600        4096       0                       
+0x0000133c 397148185  sciarian   666        16384      0                       
+0x00006122 400293915  sciarian   666        16384      0                       
+0x000036f2 91291686   staffors   666        16384      0                       
+
+------ Semaphore Arrays --------
+key        semid      owner      perms      nsems     
+
+[eos20:~/CIS452/Labs/Lab5]$ scripe[Kt
+Script started, file is typescript
+[?1034h[eos20:~/CIS452/Labs/Lab5]$ exit[K[K[K[Kexit
+exit
+Script done, file is typescript
+[eos20:~/CIS452/Labs/Lab5]$ exit
+exit
+
+Script done on Thu 09 Feb 2017 11:17:00 AM EST

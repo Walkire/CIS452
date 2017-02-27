@@ -1,0 +1,68 @@
+#include <pthread.h>
+#include <stdio.h>
+#include <errno.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <string.h>
+#include <signal.h>
+#include <time.h>
+
+void *do_work(void *arg);
+void sigHandler(int);
+int numreq, threadnum, status;
+pthread_t thread;
+
+int main() {
+  
+  char userarr[1024];
+  signal(SIGINT, sigHandler);
+  srand((unsigned)time(NULL));
+
+  while(1) {
+
+    printf ("Name a file: ");
+    fgets(userarr,1024,stdin);
+    
+    if((status = pthread_create(&thread, NULL, do_work, &userarr)) != 0) {
+      fprintf(stderr, "thread create error %d: %s\n", status, strerror(status));
+      exit(1);
+    }
+    threadnum++;
+  }
+
+}
+
+void *do_work(void *arg) {
+  int randNum, randNum2;
+  randNum = rand() % 5;
+  char *val_ptr = (char *)arg;
+
+  if (!randNum){
+    
+    randNum2 = (rand() % 4) + 7;
+    sleep(randNum2);
+      
+  }
+  else {
+
+    sleep(1);
+  }
+
+  numreq++;
+  printf("File %s accessed\n", val_ptr);
+  threadnum--;
+  return NULL;
+}
+
+ void sigHandler(int sig){
+   void *result;
+   while(threadnum > 0){
+     if ((status = pthread_join(thread, &result)) != 0) {
+       fprintf(stderr, "join error %d:%s\n", status, strerror(status));
+       exit(1);
+     }
+     threadnum--;
+   }
+   printf("%d files accessed\n",numreq);
+   exit(0);
+ }

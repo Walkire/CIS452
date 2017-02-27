@@ -1,0 +1,23 @@
+Script started on Mon 23 Jan 2017 02:46:01 PM EST
+[?1034h[arch04:~/CIS452/Labs/Lab2]$ gcc -Wall Sc[KampleShell.c
+[arch04:~/CIS452/Labs/Lab2]$ ./a.out
+>>> ls -l
+total 44
+-rwx--x--x 1 allvinn users 9080 Jan 23 14:46 a.out
+-rw------- 1 allvinn users  168 Jan 19 10:24 sample1.c
+-rw------- 1 allvinn users  383 Jan 19 10:32 sample2.c
+-rw------- 1 allvinn users  573 Jan 19 11:00 #sample3.c#
+-rw------- 1 allvinn users  544 Jan 19 11:10 sample3.c
+-rw------- 1 allvinn users 1421 Jan 19 10:59 sample3.c~
+-rw------- 1 allvinn users  388 Jan 19 11:11 sample4.c
+-rw------- 1 allvinn users 1235 Jan 23 14:43 SampleShell.c
+-rw------- 1 allvinn users  807 Jan 19 12:41 SampleShell.c~
+-rw------- 1 allvinn users    0 Jan 23 14:46 typescript
+
+**End time: 0.002056 sec**
+**Number of involuntary context switches: 24**
+>>> quit
+[arch04:~/CIS452/Labs/Lab2]$ exit
+exit
+
+Script done on Mon 23 Jan 2017 02:46:37 PM EST

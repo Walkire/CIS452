@@ -1,0 +1,16 @@
+[arch10:~/CIS452/Projects]$ gcc -Wall getInfo.c
+[arch10:~/CIS452/Projects]$ ./a.out
+User is: allvinn
+UID is: 7214
+GID is: 500
+Host is: arch10.cis.gvsu.edu
+entry 0: root
+entry 1: bin
+entry 2: daemon
+entry 3: adm
+entry 4: lp
+
+environment variable desired?JAVA_HOME
+
+value is: /usr/java/latest
+[arch10:~/CIS452/Projects]$ 
